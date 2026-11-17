@@ -1,0 +1,34 @@
+{
+  "nome": "Arpint",
+  "slogan": "Equipamentos profissionais para pintura",
+  "dominio": "https://arpint.vercel.app",
+  "whatsapp": "5511958700890",
+  "email": "",
+  "razaoSocial": "",
+  "cnpj": "",
+  "endereco": "",
+  "retirada": {
+    "ativa": true,
+    "endereco": "",
+    "horario": ""
+  },
+  "cepOrigem": "",
+  "politicas": [
+    {
+      "titulo": "Entrega e frete",
+      "texto": "Enviamos para todo o Brasil pelos Correios (PAC e SEDEX) e por transportadoras parceiras. O valor e o prazo são calculados pelo CEP de entrega, no carrinho e no checkout, e já incluem o seguro da mercadoria. O prazo conta em dias úteis a partir da confirmação do pagamento e da postagem. Também é possível retirar o pedido na loja, sem custo de frete, quando essa opção estiver disponível."
+    },
+    {
+      "titulo": "Pagamento",
+      "texto": "Aceitamos Pix e cartão de crédito, pagos no ambiente seguro do Mercado Pago. Nunca pedimos dados de cartão por mensagem. O pedido só é separado depois da confirmação do pagamento."
+    },
+    {
+      "titulo": "Trocas e devoluções",
+      "texto": "Por ser uma compra feita pela internet, você tem 7 dias corridos, a partir do recebimento, para desistir da compra (direito de arrependimento do Código de Defesa do Consumidor), com o produto sem uso e na embalagem original. Produto com defeito ou diferente do pedido: fale com a gente o quanto antes pelo WhatsApp, com fotos e o número do pedido, que resolvemos a troca ou o reembolso."
+    },
+    {
+      "titulo": "Privacidade",
+      "texto": "Usamos seus dados (nome, CPF/CNPJ, telefone, e-mail e endereço) somente para processar o pedido, emitir a nota, entregar a mercadoria e falar com você sobre a compra. Compartilhamos o necessário com a transportadora e com o meio de pagamento. Não vendemos seus dados. Você pode pedir acesso, correção ou exclusão dos seus dados a qualquer momento pelo nosso WhatsApp."
+    }
+  ]
+}

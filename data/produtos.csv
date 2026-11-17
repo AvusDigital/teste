@@ -1,0 +1,91 @@
+id,sku,nome,categoria,subcategoria,marca,preco,estoque,peso_g,comprimento_cm,largura_cm,altura_cm,imagem,descricao,destaque,ativo
+3,,Caneca de Alumínio 600 ml,Acessórios,Canecas,Wimpel,130,,250,,,,https://www.wimpel.com.br/doutor/uploads/6/produtos/2026/07/cover-caneca-de-aluminio-600-ml-82f517c712.png,,,sim
+4,,Caneca Plástica,Acessórios,Canecas,Wimpel,,,250,,,,https://www.wimpel.com.br/doutor/uploads/6/produtos/2026/07/cover-caneca-plastica-ea8c5b19b7.png,,,sim
+5,,Caneca Plástica UV,Acessórios,Canecas,Wimpel,,,250,,,,https://www.wimpel.com.br/doutor/uploads/6/produtos/2026/07/cover-caneca-plastica-uv-46b24b03d2.png,,,sim
+6,,Sistema de Pintura Wimpel - Caneca SPW,Acessórios,Canecas,Wimpel,75,,250,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2019/05/cover-sistema-de-pintura-wimpel-spw-af3848b650.jpg,,,sim
+8,,Engate Rápido de Vazão Plena e Pinos,Acessórios,Kits,Wimpel,55,,250,,,,https://www.wimpel.com.br/doutor/uploads/6/produtos/2026/07/cover-engate-rapido-de-vazao-plena-e-pinos-0c04a191af.png,,,sim
+9,,Kit Abraçadeiras,Acessórios,Kits,Wimpel,25,,250,,,,https://www.wimpel.com.br/doutor/uploads/6/produtos/2026/07/cover-kit-abracadeiras-a722391beb.png,,,sim
+10,,"Kit Engate Rápido Fêmea 1/4""",Acessórios,Kits,Wimpel,,,250,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-kit-engate-rapido-1-4-6665510189.jpg,,,sim
+11,,Kit Espigão Fixo para Filtros Lubrificadores,Acessórios,Kits,Wimpel,28,,250,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-kit-espigao-fixo-a3809935d3.jpg,,,sim
+12,,Kit Guarnição,Acessórios,Kits,Wimpel,,,250,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-kit-guarnicao-cp-10-98ebd0c414.jpg,,,sim
+13,,Kit para Filtro Regulador FRMP-4,Acessórios,Kits,Wimpel,,,250,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-kit-para-filtro-regulador-frlmp-1-a86be229b2.jpg,,,sim
+14,,Kit para Filtro Regulador FRMP-5,Acessórios,Kits,Wimpel,,,250,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-kit-para-filtro-regulador-frlmp-2-c1cc3605dd.jpg,,,sim
+15,,Kit Pino Engate Rápido Fêmea,Acessórios,Kits,Wimpel,22,,250,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-kit-pino-engate-rapido-femea-c49949e65a.jpg,,,sim
+16,,Kit Pino Engate Rápido Macho,Acessórios,Kits,Wimpel,22,,250,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-kit-pino-engate-rapido-macho-a7c97f2fb3.jpg,,,sim
+17,,"Kit União Giratória 5/16""",Acessórios,Kits,Wimpel,28,,250,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-kit-uniao-giratoria-5-16-b0cae91bd1.jpg,,,sim
+18,,"Mangueira de Borracha 5/16""",Acessórios,,Wimpel,750,,250,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mangueira-de-borracha-de-5-16-665b8b644a.jpg,,,sim
+19,,Mangueira de Nylon,Acessórios,,Wimpel,185,,250,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mangueira-nailon-31bdb25601.jpg,,,sim
+20,,Manômetro Horizontal,Acessórios,,Wimpel,,,250,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-manometro-5fb731e8a2.jpg,,,sim
+21,,Oleador OP-1,Acessórios,,Wimpel,,,250,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-oleador-op-1-00034f5721.jpg,,,sim
+23,MP-1001,MP-1001,Aerógrafos,,Wimpel,220,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mp-1001-d4cfc51a0c.jpg,,,sim
+24,MP-1002,MP-1002,Aerógrafos,,Wimpel,220,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mp-1002-191c38fdc1.jpg,,,sim
+25,MP-1003,MP-1003,Aerógrafos,,Wimpel,220,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mp-1003-b7d95f9d60.jpg,,,sim
+26,MP-1004,MP-1004,Aerógrafos,,Wimpel,220,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mp-1004-d7b13692bf.jpg,,,sim
+27,MP-1005,MP-1005,Aerógrafos,,Wimpel,220,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2019/05/cover-mp-1005-90f085dceb.jpg,,,sim
+29,CW-10,CW-10 Airless,Airless,,Wimpel,2000,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2023/03/cover-cw-10-airless-d98c744316.jpg,,,sim
+32,,Cabine de Pintura CAB-CT,Cabines de Pintura,Cabines de Acerto de Chapinha,Wimpel,5500,,6000,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2023/03/cover-cabine-de-pintura-ct-aaa001b2b1.jpg,,,sim
+33,,Cabine de Pintura CABMP-1,Cabines de Pintura,Cabines de Acerto de Chapinha,Wimpel,4800,,6000,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-cabine-de-pintura-dad24c0b73.jpg,,,sim
+35,,Cabine de Aerografia CABMP-2,Cabines de Pintura,Cabines de Aerografia,Wimpel,1550,,6000,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-aerografia-5151e80645.jpg,,,sim
+36,,Mini Cabine com LED e Exaustão CABMP-3,Cabines de Pintura,Cabines de Aerografia,Wimpel,1350,,6000,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2019/05/cover-mini-cabine-com-led-e-exaustao-cabmp-3-926fd0d5d8.jpg,,,sim
+38,,Compressor de Ar Direto COMP-2,Compressores,,Wimpel,650,,6000,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-compressor-de-ar-direto-comp-2-2447dc6420.jpg,,,sim
+39,,Compressor de Ar Direto COMP-5,Compressores,,Wimpel,650,,6000,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/06/cover-compressor-de-ar-direto-comp-5-c8630c09bb.jpg,,,sim
+40,,Compressor para Aerógrafo COMP-1,Compressores,,Wimpel,1150,,6000,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-compressor-para-aerografo-b903861f72.jpg,,,sim
+41,,Compressor para Aerógrafo COMP-3,Compressores,,Wimpel,550,,6000,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-comp-3-5de3519fdf.png,,,sim
+43,,Máscara Respiratória PFF1,EPIs,,Wimpel,420,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mascara-respiratoria-pff-1-1b0bb37ffd.jpg,,,sim
+44,,Respirador Semi Facial Duplo MASTT 2402,EPIs,,Wimpel,95,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2020/06/cover-mascara-semi-facial-dupla-219951756c.jpg,,,sim
+45,,Respirador Semi Facial MASTT 2401,EPIs,,Wimpel,75,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mascara-semi-facial-72a578b7a9.jpg,,,sim
+47,,FRLMP-4,"Filtros, Reguladores e Lubrificadores",,Wimpel,320,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-frlmp-4-cc28d3bc21.jpg,,,sim
+48,,FRLMP-5,"Filtros, Reguladores e Lubrificadores",,Wimpel,380,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-frlmp-5-c03df79c88.jpg,,,sim
+49,,FRMP-4,"Filtros, Reguladores e Lubrificadores",,Wimpel,250,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-frmp-4-d8538e5b32.jpg,,,sim
+50,,FRMP-5,"Filtros, Reguladores e Lubrificadores",,Wimpel,350,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2018/03/cover-frmp-5-b94fdbc5e7.jpg,,,sim
+51,,FRMP-6,"Filtros, Reguladores e Lubrificadores",,Wimpel,350,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2020/02/cover-frmp-6-891838dd0b.jpg,,,sim
+53,,WIMLED,Iluminação Auxiliar,,Wimpel,250,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2019/03/cover-wimled-14a3a91e2e.jpg,,,sim
+55,,Aspirador de Pó MP-506,Lixadeiras,,Wimpel,1700,,6000,,,,https://www.wimpel.com.br/doutor/uploads/6/produtos/2026/07/cover-aspirador-de-po-mp-506-1e0b8633c4.png,,,sim
+56,LXMP-3000,LXMP-3000,Lixadeiras,,Wimpel,1500,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2020/07/cover-lxmp-3000-923776cd82.jpg,,,sim
+57,,LXMP-5,Lixadeiras,,Wimpel,420,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/11/cover-lxmp-5-804cfd2c15.jpg,,,sim
+58,LXMP-700,LXMP-700,Lixadeiras,,Wimpel,900,,550,,,,https://www.wimpel.com.br/doutor/uploads/6/produtos/2026/07/cover-lxmp-700-b973036aeb.png,,,sim
+60,MP-207,MP-207,Misturador Elétrico para Tintas,,Wimpel,650,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2021/07/cover-mp-207-f323338180.png,,,sim
+63,VD-201,VD-201,Pistolas,Linha VD,Wimpel,190,,550,,,,https://www.wimpel.com.br/doutor/uploads/6/produtos/2025/10/cover-vd-201-1a92afe687.png,,,sim
+64,VD-22,VD-22,Pistolas,Linha VD,Wimpel,,,550,,,,https://www.wimpel.com.br/doutor/uploads/6/produtos/2025/10/cover-vd-22-632e7ad4e4.png,,,sim
+65,VD-250,VD-250,Pistolas,Linha VD,Wimpel,180,,550,,,,https://www.wimpel.com.br/doutor/uploads/6/produtos/2025/10/cover-vd-250-bd45aa321b.png,,,sim
+66,VD-61,VD-61,Pistolas,Linha VD,Wimpel,160,,550,,,,https://www.wimpel.com.br/doutor/uploads/6/produtos/2025/10/cover-vd-61-995ede5db3.png,,,sim
+68,MP-2000,MP-2000,Pistolas,Pistola para Textura Projetada,Wimpel,250,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/06/cover-mp-2000-33392be101.jpg,,,sim
+70,,Pistola Pulverizadora - COMP-4,Pistolas,Pistola Pulverizadora Elétrica,Wimpel,450,,550,,,,https://www.wimpel.com.br/doutor/uploads/6/produtos/2026/06/cover-pistola-pulverizadora-comp-4-16a20437fe.png,,,sim
+71,,Pistola Pulverizadora COMP-6,Pistolas,Pistola Pulverizadora Elétrica,Wimpel,450,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2019/05/cover-pistola-pulverizadora-comp-6-6a806c2bee.jpg,,,sim
+73,CP-10,CP-10,Pistolas,Alta Produção (Sucção),Wimpel,380,,550,,,,https://www.wimpel.com.br/doutor/uploads/6/produtos/2026/06/cover-cp-10-b866690729.png,,,sim
+74,MP-410,MP-410 S,Pistolas,Alta Produção (Sucção),Wimpel,480,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mp-400-s-a54da42ff1.jpg,,,sim
+76,MP-781,MP-781,Pistolas,Baixa Produção (Sucção),Wimpel,380,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mp-781-8db0ba8531.jpg,,,sim
+78,MP-201,MP-201 AD,Pistolas,Ar Direto,Wimpel,180,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/09/cover-mp-201-ad-614254b3a4.png,,,sim
+79,MP-21,MP-21,Pistolas,Ar Direto,Wimpel,180,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mp-21-e84b2dd1e3.jpg,,,sim
+80,MP-22,MP-22,Pistolas,Ar Direto,Wimpel,120,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mp-22-ab41193c5e.jpg,,,sim
+82,,MP 105,Pistolas,Retoque,Wimpel,320,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mp-105-7fe3340542.jpg,,,sim
+84,CP-10,CP-10 T,Pistolas,Tanque,Wimpel,380,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-cp-10-t-60113e185e.jpg,,,sim
+85,K-591,K-591,Pistolas,Tanque,Wimpel,2200,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-k-591-c5018de7e5.jpg,,,sim
+86,MP-410,MP-410 T,Pistolas,Tanque,Wimpel,520,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mp-400t-90df2d2af1.jpg,,,sim
+88,MP-18,MP-18,Pistolas,Emborrachamento,Wimpel,100,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2023/03/cover-mp-18-0f347d6510.jpg,,,sim
+89,MP-19,MP-19,Pistolas,Emborrachamento,Wimpel,150,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2018/10/cover-mp-19-19e3f82c5f.jpg,,,sim
+91,,MP 791,Pistolas,Gravidade Convencional,Wimpel,233,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2021/03/cover-mp-791-405da32212.jpg,,,sim
+92,MP-2010,MP-2010,Pistolas,Gravidade Convencional,Wimpel,130,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/09/cover-mp-2010-f6fe409354.png,,,sim
+93,MP-2011,MP-2011,Pistolas,Gravidade Convencional,Wimpel,150,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/09/cover-mp-2011-e65fc0e37d.png,,,sim
+94,MP-269,MP-269,Pistolas,Gravidade Convencional,Wimpel,650,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mp-269-b51fdac60a.jpg,,,sim
+95,MP-61,MP-61,Pistolas,Gravidade Convencional,Wimpel,,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/06/cover-mp-61g-10c8dc9906.jpg,,,sim
+97,,MP 700 Plus,Pistolas,HVLP,Wimpel,800,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mp-700-4fad89f5c7.jpg,,,sim
+98,MP-201,MP-201 HVLP,Pistolas,HVLP,Wimpel,,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/05/cover-mp-201-hvlp-93fc1603bb.jpg,,,sim
+99,MP-260,MP-260 HVLP - CAIXA,Pistolas,HVLP,Wimpel,750,,550,,,,https://www.wimpel.com.br/doutor/uploads/6/produtos/2026/07/cover-mp-260-hvlp-caixa-98240c8bf8.png,,,sim
+100,MP-260,MP-260 HVLP - MALETA,Pistolas,HVLP,Wimpel,850,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2019/06/cover-mp-260-hvlp-maleta-69b48b748d.jpg,,,sim
+101,MP-350,MP-350 Standard HVLP,Pistolas,HVLP,Wimpel,275,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2024/07/cover-mp-350-standard-hvlp-9b20b09e8b.jpg,,,sim
+102,MP-560,MP-560,Pistolas,HVLP,Wimpel,190,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2019/05/cover-mp-560-b0c687e2ad.jpg,,,sim
+103,MP-570,MP-570 HVLP,Pistolas,HVLP,Wimpel,520,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2024/09/cover-mp-570-1147b11f64.png,,,sim
+104,MP-600,MP-600 Plus,Pistolas,HVLP,Wimpel,130,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mp-600-bff127e675.jpg,,,sim
+105,MP-610,MP-610,Pistolas,HVLP,Wimpel,175,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mp-610-9b4bd0dce0.jpg,,,sim
+106,MP-610,MP-610 - CAIXA BLACK,Pistolas,HVLP,Wimpel,155,,550,,,,https://www.wimpel.com.br/doutor/uploads/6/produtos/2026/07/cover-mp-610-caixa-black-0848b681b0.png,,,sim
+108,MP-410,MP-410 LVLP,Pistolas,LVLP,Wimpel,480,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2018/02/cover-mp-410-lvlp-827dc11022.jpg,,,sim
+110,MP-741,MP-741,Pistolas,Média Produção (Sucção),Wimpel,420,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-mp-741-fa758f6f70.jpg,,,sim
+114,,BLMP-1,Pulverizadores e Bicos de Limpeza,,Wimpel,38,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-blmp-1-4be9175235.jpg,,,sim
+115,,BLMP-2,Pulverizadores e Bicos de Limpeza,,Wimpel,26,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-blmp-2-42223241a2.jpg,,,sim
+116,,BLMP-2L,Pulverizadores e Bicos de Limpeza,,Wimpel,30,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-blmp-2l-f5f2ace744.jpg,,,sim
+117,,BLMP-3,Pulverizadores e Bicos de Limpeza,,Wimpel,22,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-blmp-3-170287782b.jpg,,,sim
+118,,PVMP-1,Pulverizadores e Bicos de Limpeza,,Wimpel,55,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-pvmp-1-e2e9a60e13.jpg,,,sim
+119,,PVMP-2,Pulverizadores e Bicos de Limpeza,,Wimpel,37,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/01/cover-pvmp-2-2f3db6a9c1.jpg,,,sim
+123,TPMP-10,TPMP-10-CH,Tanques de Pressão,,Wimpel,1250,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/06/cover-tpmp-10-ch-da3c201527.jpg,,,sim
+124,,TPMP-2P,Tanques de Pressão,,Wimpel,,,550,,,,https://www.wimpel.com.br/doutor/uploads/3/produtos/2017/06/cover-tpmp-2p-fab3faa9c1.jpg,,,sim

@@ -1,0 +1,13 @@
+{
+  "name": "arpint-loja",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Loja Arpint: site estático + API mínima, sem dependências de runtime.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/dev.js",
+    "test": "node --test test/*.test.js",
+    "imagens": "node scripts/imagens.js"
+  }
+}
