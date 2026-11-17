@@ -8,8 +8,9 @@ const wa = (T, texto) => `https://wa.me/${T.loja.whatsapp}?text=${encodeURICompo
 
 const ICONES = {
   carrinho: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a1 1 0 0 0 1 .8h8.8a1 1 0 0 0 1-.8L20 7H6"/></svg>',
-  tema: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
   busca: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>',
+  sol: '<svg class="sol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+  lua: '<svg class="lua" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>',
   menu: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>'
 };
 
@@ -62,7 +63,7 @@ ${T.demo ? '<div class="faixa-demo" role="note">MODO DEMONSTRAÇÃO — frete e 
 <nav class="nav" aria-label="Principal">${navHtml}</nav>
 <form class="busca-topo" action="/produtos/" role="search"><label class="visualmente-oculto" for="q-topo">Buscar produtos</label><input id="q-topo" type="search" name="q" placeholder="Buscar produto ou código" autocomplete="off"><button type="submit" aria-label="Buscar">${ICONES.busca}</button></form>
 <div class="acoes">
-<button class="icone-btn" type="button" data-tema-btn aria-label="Alternar tema claro/escuro">${ICONES.tema}</button>
+<button class="interruptor" type="button" role="switch" aria-checked="false" aria-label="Modo claro" data-tema-btn><span class="trilho">${ICONES.lua}${ICONES.sol}<span class="botao"></span></span></button>
 <a class="icone-btn" href="/carrinho/" aria-label="Carrinho">${ICONES.carrinho}<span class="contagem" data-contagem hidden>0</span></a>
 <details class="menu-m"><summary class="icone-btn" aria-label="Menu">${ICONES.menu}</summary><nav aria-label="Menu móvel"><form action="/produtos/" role="search"><label class="visualmente-oculto" for="q-menu">Buscar</label><input id="q-menu" type="search" name="q" placeholder="Buscar produto ou código"><button type="submit" aria-label="Buscar">${ICONES.busca}</button></form><a href="/produtos/">Todos os produtos</a>${T.categorias.map(c => `<a href="/categoria/${c.slug}/">${esc(c.nome)}</a>`).join('')}<a href="/politicas/">Políticas</a></nav></details>
 </div></div></header>
@@ -122,8 +123,8 @@ function listagem(T, cat) {
     corpo: `<div class="wrap"><div class="pagina-cab"><nav class="migalhas" aria-label="Você está em"><a href="/">Início</a> / ${cat ? `<a href="/produtos/">Produtos</a> / ${esc(cat.nome)}` : 'Produtos'}</nav><h1>${esc(titulo)}</h1></div>
 <div class="lista-layout"><aside class="filtros" aria-label="Filtros">
 <div><h2>Buscar</h2><label class="visualmente-oculto" for="q">Buscar nesta lista</label><input id="q" type="search" placeholder="Nome ou código" autocomplete="off"></div>
-<div><h2>Categorias</h2><ul><li><a href="/produtos/"${!cat ? ' aria-current="page"' : ''}>Todas <span>${T.produtos.length}</span></a></li>${T.categorias.map(c => `<li><a href="/categoria/${c.slug}/"${cat && cat.slug === c.slug ? ' aria-current="page"' : ''}>${esc(c.nome)} <span>${c.qtd}</span></a></li>`).join('')}</ul></div>
 <div><h2>Ordenar</h2><label class="visualmente-oculto" for="ordem">Ordenar por</label><select id="ordem"><option value="">Relevância</option><option value="menor">Menor preço</option><option value="maior">Maior preço</option><option value="az">Nome (A–Z)</option></select></div>
+<div><h2>Categorias</h2><ul><li><a href="/produtos/"${!cat ? ' aria-current="page"' : ''}>Todas <span>${T.produtos.length}</span></a></li>${T.categorias.map(c => `<li><a href="/categoria/${c.slug}/"${cat && cat.slug === c.slug ? ' aria-current="page"' : ''}>${esc(c.nome)} <span>${c.qtd}</span></a></li>`).join('')}</ul></div>
 </aside>
 <section aria-label="Produtos">${subs.length > 1 ? `<div class="chips" role="group" aria-label="Subcategorias"><button class="chip" type="button" data-sub="" aria-pressed="true">Todas</button>${subs.map(([s, n]) => `<button class="chip" type="button" data-sub="${esc(s)}" aria-pressed="false">${esc(n)}</button>`).join('')}</div>` : ''}
 <div class="barra"><span class="suave" data-resultado aria-live="polite">${prods.length} produto${prods.length !== 1 ? 's' : ''}</span></div>

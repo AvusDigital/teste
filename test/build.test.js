@@ -1,6 +1,7 @@
 'use strict';
 const test = require('node:test'), assert = require('node:assert/strict'), fs = require('fs'), path = require('path');
-const { parseCsv, numero } = require('../scripts/csv');
+const { parseCsv, numero, decodificar } = require('../scripts/csv');
+const { dimensoes } = require('../scripts/imgsize');
 
 test('CSV: aspas, vírgula dentro do campo, quebra de linha, BOM e separador ;', () => {
   const r = parseCsv('\uFEFFid,nome,preco\r\n1,"Pistola, grande ""VD""",\"1.234,50\"\r\n2,"Duas\nlinhas",10\r\n');
@@ -17,4 +18,16 @@ test('build: páginas essenciais existem, SEO presente, sem script/estilo inline
   assert.match(html, /application\/ld\+json/); assert.match(html, /"@type":"Product"/); assert.match(html, /rel="canonical"/);
   assert.ok(!/\sstyle="/.test(html) && !/\son[a-z]+="/.test(html));
   assert.ok(fs.readFileSync(path.join(dist, 'sitemap.xml'), 'utf8').includes(`/produto/${p.slug}/`));
+});
+
+test('CSV do Excel em Windows-1252 mantém os acentos; UTF-8 também', () => {
+  assert.equal(decodificar(Buffer.from('nome\nPistola de Alumínio ção', 'latin1')), 'nome\nPistola de Alumínio ção');
+  assert.equal(decodificar(Buffer.from('\uFEFFnome\nÁrvore', 'utf8')), 'nome\nÁrvore');
+});
+
+test('imgsize: lê dimensões de PNG e WebP', () => {
+  const png = Buffer.alloc(32); png.writeUInt32BE(0x89504e47, 0); png.writeUInt32BE(1200, 16); png.writeUInt32BE(900, 20);
+  assert.deepEqual(dimensoes(png), { w: 1200, h: 900 });
+  const logo = dimensoes(fs.readFileSync(path.join(__dirname, '../public/img/logo-fundo-escuro.webp')));
+  assert.equal(logo.w, 640); assert.ok(logo.h > 100);
 });

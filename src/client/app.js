@@ -56,7 +56,14 @@
   // ---------- comum a todas as páginas ----------
   atualizarContagem();
   document.addEventListener('error', e => { const t = e.target; if (t.tagName === 'IMG' && !t.src.endsWith('/img/placeholder.svg')) t.src = '/img/placeholder.svg'; }, true);
-  $$('[data-tema-btn]').forEach(b => b.addEventListener('click', () => { const novo = document.documentElement.dataset.tema === 'claro' ? 'escuro' : 'claro'; document.documentElement.dataset.tema = novo; ls.gravar('arpint.tema', novo); }));
+  // Interruptor de tema: a escolha fica salva (texto puro, o mesmo formato que tema.js lê) e vale em todas as páginas e abas.
+  const aplicarTema = claro => { document.documentElement.dataset.tema = claro ? 'claro' : 'escuro'; $$('[data-tema-btn]').forEach(b => b.setAttribute('aria-checked', String(claro))); };
+  aplicarTema(document.documentElement.dataset.tema === 'claro');
+  $$('[data-tema-btn]').forEach(b => b.addEventListener('click', () => {
+    const claro = document.documentElement.dataset.tema !== 'claro'; aplicarTema(claro);
+    try { localStorage.setItem('arpint.tema', claro ? 'claro' : 'escuro'); } catch {}
+  }));
+  window.addEventListener('storage', e => { if (e.key === 'arpint.tema') aplicarTema(e.newValue === 'claro'); });
   document.addEventListener('click', e => {
     const b = e.target.closest('[data-add]'); if (!b || b.disabled) return;
     const id = Number(b.dataset.add); const campo = b.hasAttribute('data-usar-qtd') ? $('[data-qtd]') : null;

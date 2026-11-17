@@ -18,4 +18,10 @@ function parseCsv(txt) {
 }
 const numero = s => { s = String(s).replace(/R\$|\s/g, ''); if (!s) return null; if (s.includes(',')) s = s.replace(/\./g, '').replace(',', '.'); const n = Number(s); return Number.isFinite(n) ? n : NaN; };
 
-module.exports = { parseCsv, numero };
+// O Excel em português costuma salvar CSV em Windows-1252 (acentos quebram se lido como UTF-8). Aceita os dois.
+function decodificar(buf) {
+  try { return new TextDecoder('utf-8', { fatal: true }).decode(buf).replace(/^\uFEFF/, ''); }
+  catch { return new TextDecoder('windows-1252').decode(buf); }
+}
+
+module.exports = { parseCsv, numero, decodificar };

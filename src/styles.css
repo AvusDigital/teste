@@ -1,12 +1,12 @@
 /* Arpint — CSS escrito à mão (sem framework, sem build de CSS). Tema escuro por padrão; claro por botão. */
 :root{
-  --laranja:#ff6a00; --laranja-escuro:#e65f00; --foto:#ffd9bd;
+  --laranja:#ff6a00; --laranja-escuro:#e65f00;
   --bg:#1b1c1f; --painel:#26272b; --painel2:#2f3035; --texto:#f4f4f2; --suave:#a3a3a3; --linha:rgba(255,255,255,.12);
   --ok:#3ecf8e; --erro:#ff6b6b; --raio:14px; --max:1180px;
   --fonte:"Segoe UI Variable Display","Segoe UI","SF Pro Display","Helvetica Neue",Arial,sans-serif;
   color-scheme:dark;
 }
-:root[data-tema="claro"]{ --bg:#f5f4f1; --painel:#fff; --painel2:#ebeae6; --texto:#16171a; --suave:#5c5c5c; --linha:rgba(0,0,0,.12); --foto:#ffe4cf; color-scheme:light; }
+:root[data-tema="claro"]{ --bg:#f5f4f1; --painel:#fff; --painel2:#ebeae6; --texto:#16171a; --suave:#5c5c5c; --linha:rgba(0,0,0,.12); color-scheme:light; }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--texto);font:400 1rem/1.55 var(--fonte);min-height:100vh;display:flex;flex-direction:column}
@@ -92,8 +92,8 @@ label small{font-weight:400;color:var(--suave)}
 @media(max-width:760px){.faixa{grid-template-columns:1fr}}
 
 /* fotos e cards */
-.foto{background:var(--foto);overflow:hidden;display:grid;place-items:center}
-.foto img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+.foto{background:#fff;overflow:hidden;display:grid;place-items:center}
+.foto img{width:100%;height:100%;object-fit:contain;padding:3%}
 .grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1rem}
 .card{position:relative;display:flex;flex-direction:column;background:var(--painel);border:1px solid var(--linha);border-radius:var(--raio);overflow:hidden;transition:border-color .15s}
 .card:hover,.card:focus-within{border-color:var(--laranja)}
@@ -196,3 +196,12 @@ label small{font-weight:400;color:var(--suave)}
 
 .item-carrinho .qtd{justify-self:start}
 .menu-m form{display:flex;margin-bottom:.4rem} .menu-m form input{border-radius:10px 0 0 10px} .menu-m form button{border-radius:0 10px 10px 0;border:1px solid var(--linha);border-left:0;background:var(--painel2);color:var(--texto);padding:0 .8rem;cursor:pointer} .menu-m svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
+
+/* interruptor claro/escuro (a posição vem do data-tema, então não pisca ao carregar) */
+.interruptor{background:none;border:0;padding:0;cursor:pointer;display:inline-flex;border-radius:999px}
+.trilho{position:relative;display:flex;align-items:center;justify-content:space-between;width:60px;height:34px;padding:0 9px;border-radius:999px;background:var(--painel);border:1px solid var(--linha);transition:border-color .15s}
+.interruptor:hover .trilho{border-color:var(--laranja)}
+.trilho svg{position:relative;z-index:1;width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;color:var(--suave);transition:color .2s}
+.botao{position:absolute;top:3px;left:3px;width:26px;height:26px;border-radius:50%;background:var(--laranja);transition:transform .2s}
+.trilho .lua{color:#161616} :root[data-tema="claro"] .trilho .lua{color:var(--suave)}
+:root[data-tema="claro"] .trilho .sol{color:#161616} :root[data-tema="claro"] .botao{transform:translateX(26px)}

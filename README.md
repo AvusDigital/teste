@@ -23,8 +23,9 @@ npm run imagens   # baixa as imagens dos produtos para dentro do projeto (precis
   - **`estoque` vazio = sem controle (sempre disponível).** Com número, o site desconta cada venda paga. Para fazer uma nova contagem, é só trocar o número na planilha: a contagem recomeça dali.
 - **Mais fácil para o Arlindo editar:** crie uma planilha no Google Sheets com essas colunas, *Arquivo > Compartilhar > Publicar na Web > CSV*, coloque o link em `CATALOGO_CSV_URL` e crie um *Deploy Hook* na Vercel. Cada deploy puxa a planilha. Se a planilha estiver quebrada, o build **aborta e o site anterior continua no ar**.
 - O build valida tudo (id repetido, preço inválido...) e avisa o que falta (medidas, imagens externas).
+- **Passo a passo de edição (colunas, exemplos, Excel):** `data/COMO-EDITAR.md`.
 - **Medidas e peso:** hoje os 90 produtos estão sem medidas, e 63 têm peso 550 g (valor padrão da base antiga). Preencha `peso_g` (já com a embalagem) e `comprimento_cm/largura_cm/altura_cm`; senão o frete real usa a caixa padrão (`FRETE_CAIXA_PADRAO`).
-- **Imagens:** `npm run imagens` baixa para `public/img/produtos/<id>.<ext>`; o build passa a usar as cópias. Depois remova `https://www.wimpel.com.br` do `img-src` no `vercel.json`.
+- **Imagens:** `npm run imagens` baixa para `public/img/produtos/<id>.<ext>` (tenta a versão sem `cover-`, que costuma ser maior), mede cada foto e lista em `data/imagens-pequenas.txt` as que estão abaixo de 800 px, candidatas a foto nova. O build passa a usar as cópias; foto sua com o nome `<id>.jpg` (ou png/webp) em `public/img/produtos/` tem prioridade. Depois remova `https://www.wimpel.com.br` do `img-src` no `vercel.json`.
 
 ## Fim de semana: ligar o que é real (nessa ordem)
 Dica: `/api/saude?key=SUA_SAUDE_KEY` lista, em português, o que ainda falta.

@@ -11,7 +11,8 @@ const T = require('../src/templates');
 const RAIZ = path.join(__dirname, '..'), DIST = path.join(RAIZ, 'dist');
 const lerArq = p => fs.readFileSync(path.join(RAIZ, p), 'utf8');
 
-const { parseCsv, numero } = require('./csv');
+const { parseCsv, numero, decodificar } = require('./csv');
+const { dimensoes } = require('./imgsize');
 const sim = s => /^(sim|s|1|true|x)$/i.test(s);
 
 async function carregarCsv(avisos) {
@@ -20,14 +21,14 @@ async function carregarCsv(avisos) {
     try {
       const r = await fetch(url, { signal: AbortSignal.timeout(15000) });
       if (!r.ok) throw new Error('HTTP ' + r.status);
-      const txt = await r.text();
+      const txt = decodificar(Buffer.from(await r.arrayBuffer()));
       if (!/^\uFEFF?\s*id\s*[,;]/i.test(txt)) throw new Error('não parece o CSV de produtos (primeira coluna deve ser "id")');
       console.log('catálogo: planilha online (CATALOGO_CSV_URL)');
       return txt;
     } catch (e) { avisos.push(`CATALOGO_CSV_URL falhou (${e.message}); usando data/produtos.csv`); }
   }
   console.log('catálogo: data/produtos.csv');
-  return lerArq('data/produtos.csv');
+  return decodificar(fs.readFileSync(path.join(RAIZ, 'data/produtos.csv')));
 }
 
 // ---------- normalização e validação ----------
@@ -63,6 +64,8 @@ function normalizar(linhas, avisos) {
   if (semPeso) avisos.push(`${semPeso} produto(s) sem peso_g (usa FRETE_PESO_PADRAO_G)`);
   if (semDim) avisos.push(`${semDim} de ${ativos.length} produto(s) sem medidas: o frete real usará a caixa padrão (FRETE_CAIXA_PADRAO). Preencha comprimento/largura/altura.`);
   if (semImg) avisos.push(`${semImg} produto(s) sem imagem`);
+  const pequenas = ativos.filter(p => p.img.startsWith('/img/produtos/')).filter(p => { try { const d = dimensoes(fs.readFileSync(path.join(RAIZ, 'public', p.img))); return d && Math.min(d.w, d.h) < 600; } catch { return false; } }).length;
+  if (pequenas) avisos.push(`${pequenas} imagem(ns) local(is) com menos de 600 px: podem ficar borradas em telas grandes (veja data/imagens-pequenas.txt)`);
   if (remotas) avisos.push(`${remotas} imagem(ns) ainda vêm de site externo. Rode "npm run imagens" para baixar para o projeto.`);
   return ativos;
 }
